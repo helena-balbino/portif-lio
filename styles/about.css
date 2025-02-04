@@ -1,0 +1,65 @@
+.apresentacao {
+    padding: 3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.apresentacao-about {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao-about-titulo {
+    font-size: 2.0rem;
+    font-family: var(--fonte-titulos);
+    text-align: justify;
+}
+
+.apresentacao-titulo-destaque {
+    color: var(--cor-destaque);
+}
+
+.apresentacao-about-paragrafo {
+    font-size: 1.0rem;
+    text-align: justify;
+    font-family: var(--fonte-textos);
+    font-weight: 100;
+    gap: 20px;
+    list-style-type: none;
+}
+
+@media (max-width: 1200px){
+    .apresentacao{ 
+        flex-direction: column-reverse;
+        /* padding: 50%; */
+    /}
+
+    .apresentacao-conteudo{
+        width: auto;
+    }
+
+    .apresentacao-contatos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column-reverse; /* Em telas pequenas, se torna uma coluna única */
+        gap: 20px;
+    }
+
+    .apresentacao-conteudo, .apresentacao-imagem {
+        width: 100%; /* Faz as colunas ocuparem toda a largura disponível */
+    }
+
+    .apresentacao-contatos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

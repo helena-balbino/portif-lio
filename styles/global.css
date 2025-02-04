@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-destaque: #206143;
+    --cor-fundo: #F5F5DC;
+    --cor-texto: #757575;
+    --cor-hover: #4d826a;
+    --fonte-titulos: "Playfair Display", serif;
+    --fonte-textos: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-textos);
+}
+
+.cabecalho {
+    padding: 2% 10%;
+    background-color: var(--cor-destaque);
+    color: white;
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.cabecalho-menu-navegacao {
+    font-family: var(--fonte-titulos);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.rodape {
+    flex-grow: 1;
+    padding: 24px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
+    text-align: center;
+    font-family: var(--fonte-textos);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho-menu{
+        justify-content: center;
+    }
+}

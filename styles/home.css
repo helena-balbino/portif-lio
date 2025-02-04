@@ -1,0 +1,113 @@
+.apresentacao {
+    padding: 3% 10%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.apresentacao-conteudo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulos);
+    text-align: justify;
+}
+
+.apresentacao-titulo-destaque {
+    color: var(--cor-destaque);
+}
+
+.apresentacao-paragrafo {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: var(--fonte-textos);
+    gap: 20px;
+    list-style-type: none;
+}
+
+.apresentacao-contatos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.apresentacao-contatos-subtitulo {
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao-contatos-botoes {
+    display: flex;
+    align-items: center;  /* Alinha verticalmente ícone e texto */
+    justify-content: center; /* Mantém centralizado */
+    gap: 8px; /* Ajuste fino entre ícone e texto */
+    border: 2px solid var(--cor-destaque);
+    max-width: 300px;
+    width: 230px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 16px; /* Ajuste para um melhor espaçamento */
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-textos);
+    font-weight: 200;
+}
+
+.apresentacao-contatos-botoes:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao-contatos-botoes img {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+.apresentacao-imagem {
+    width: 40%;
+    height: 60%;
+}
+
+@media (max-width: 1200px){
+    .apresentacao{ 
+        flex-direction: column-reverse;
+        /* padding: 50%; */
+    /}
+
+    .apresentacao-conteudo{
+        width: auto;
+    }
+
+    .apresentacao-contatos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column-reverse; /* Em telas pequenas, se torna uma coluna única */
+        gap: 20px;
+    }
+
+    .apresentacao-conteudo, .apresentacao-imagem {
+        width: 100%; /* Faz as colunas ocuparem toda a largura disponível */
+    }
+
+    .apresentacao-contatos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
