@@ -2,11 +2,13 @@
 
 ## Sobre o Projeto
 Este projeto contém o código-fonte do meu portfólio pessoal, desenvolvido utilizando HTML e CSS. 
-O objetivo do projeto é apresentar as habilidades aprendidas com o formação de HTML e CSS do Programa ONE Next Education da Alura em parceria com a Oracle.
+O objetivo do projeto é apresentar as habilidades aprendidas com o curso de HTML e CS.
+
+![imagem](https://github.com/helena-balbino/portifolio/blob/main/assets/home.png)
 
 ## Ferramentas Utilizadas
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ## Estrutura do Projeto
 - `index.html`: Página principal do portfólio.
