@@ -35,7 +35,6 @@
 @media (max-width: 1200px){
     .apresentacao{ 
         flex-direction: column-reverse;
-        /* padding: 50%; */
     /}
 
     .apresentacao-conteudo{
@@ -50,12 +49,13 @@
 
 @media (max-width: 768px) {
     .apresentacao {
-        flex-direction: column-reverse; /* Em telas pequenas, se torna uma coluna única */
+        flex-direction: column-reverse; 
         gap: 20px;
+        width: 100%;
     }
 
-    .apresentacao-conteudo, .apresentacao-imagem {
-        width: 100%; /* Faz as colunas ocuparem toda a largura disponível */
+    .apresentacao-about, .apresentacao-imagem {
+        width: 100%; 
     }
 
     .apresentacao-contatos {

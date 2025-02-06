@@ -1,7 +1,6 @@
 .apresentacao {
     padding: 3% 10%;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -48,16 +47,16 @@
 
 .apresentacao-contatos-botoes {
     display: flex;
-    align-items: center;  /* Alinha verticalmente ícone e texto */
-    justify-content: center; /* Mantém centralizado */
-    gap: 8px; /* Ajuste fino entre ícone e texto */
+    align-items: center;  
+    justify-content: center; 
+    gap: 8px; 
     border: 2px solid var(--cor-destaque);
     max-width: 300px;
     width: 230px;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
-    padding: 16px; /* Ajuste para um melhor espaçamento */
+    padding: 16px; 
     text-decoration: none;
     color: var(--cor-texto);
     font-family: var(--fonte-textos);
@@ -83,8 +82,7 @@
 @media (max-width: 1200px){
     .apresentacao{ 
         flex-direction: column-reverse;
-        /* padding: 50%; */
-    /}
+    }
 
     .apresentacao-conteudo{
         width: auto;
@@ -98,12 +96,16 @@
 
 @media (max-width: 768px) {
     .apresentacao {
-        flex-direction: column-reverse; /* Em telas pequenas, se torna uma coluna única */
+        flex-direction: column-reverse; 
         gap: 20px;
     }
 
     .apresentacao-conteudo, .apresentacao-imagem {
-        width: 100%; /* Faz as colunas ocuparem toda a largura disponível */
+        width: 100%; 
+    }
+
+    .apresentacao-titulo, .apresentacao-paragrafo {
+        text-align: start;
     }
 
     .apresentacao-contatos {
